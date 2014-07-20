@@ -97,7 +97,10 @@ element html{
         },
                 
 				
-		element h3{"Full Run Statistics"},
+		element div{
+			attribute style{"clear : both"},
+			element h3{"Full Run Statistics"}
+		},
 		local:performance-table-from-stats($stats),
 		
 		(: This section shows, for each qname below, the stats where all the other qnames are set to their optimum values :)
